@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Animation</title>
+    <style>
+        body {
+            background-color: #fcfcfce5;
+        }
+
+        .load-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            animation: load 3s linear forwards infinite;
+        }
+
+        @keyframes load {
+            0% {
+                filter: grayscale(100%) drop-shadow(5px 5px 5px #222);
+            }
+
+            100% {
+                filter: grayscale(0%) saturate(9) drop-shadow(5px 5px 5px #222);
+                transform: rotateY(360deg);
+            }
+        }
+
+        @keyframes grow {
+            to {
+                transform: scale(200);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="load-container">
+        <img src="/godlike copy.png" alt="" width="100" class="logo" id="load">
+    </div>
+    <script>
+        setTimeout(function () {
+            document.querySelector('#load').style.animation = 'grow 3s ease-out forwards';
+            document.querySelector('#load').addEventListener('animationend', function () {
+                document.querySelector('#load').style.display = 'none';
+            });
+        }, 3000);
+
+    </script>
+</body>
+
+</html>

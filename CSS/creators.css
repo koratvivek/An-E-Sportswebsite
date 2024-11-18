@@ -1,0 +1,141 @@
+body {
+    background: url(/web1/images/banner-3-1.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-family: 'Russo One', sans-serif;
+}
+
+::selection {
+    background-color: rgb(168, 4, 4);
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.header-panel {
+    padding: 20px 0;
+    overflow: hidden;
+    background: linear-gradient(-45deg, red, black, black)
+}
+
+#video-background {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.nav-link {
+    color: whitesmoke;
+    font-size: 28px;
+    transition: transform 0.5s;
+}
+
+.nav-item .active {
+    color: red !important;
+}
+
+.nav-link:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+
+.header-panel-text,
+.header-panel-logo {
+    color: whitesmoke;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.header-panel-text p {
+    font-size: large;
+    word-spacing: 9px;
+    font-family: "Raleway", sans-serif;
+}
+
+#row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.user-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding-right: 40px;
+    padding-left: 0;
+    width: 690px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+.user-card:hover .a-logo {
+    animation: load 3s linear forwards infinite;
+}
+
+@keyframes load {
+    0% {
+        filter: grayscale(100%) drop-shadow(5px 5px 5px #222);
+    }
+
+    100% {
+        filter: grayscale(0%) saturate(9) drop-shadow(5px 5px 5px #222);
+        transform: rotateY(360deg);
+    }
+}
+
+.user-card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    margin-bottom: 0;
+}
+
+.user-card-img img {
+    width: 270px;
+    height: 368px;
+    object-fit: cover;
+}
+
+.user-card-info {
+    text-align: justify;
+}
+
+.user-card-info .footer-icons span {
+    margin: 0px;
+    background-color: transparent;
+    color: rgb(223, 174, 91);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 29px;
+    transition: all 0.8s;
+}
+
+.user-card-info .footer-icons span:hover {
+    color: whitesmoke;
+    background-color: transparent;
+    animation: none;
+}
+
+.a-logo {
+    height: 80px;
+}

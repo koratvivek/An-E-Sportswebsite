@@ -1,0 +1,232 @@
+body {
+    background: url(/web1/images/banner-3-1.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-family: 'Russo One', sans-serif;
+
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+::selection {
+    background-color: rgb(168, 4, 4);
+}
+
+.header-panel {
+    padding: 20px 0;
+    overflow: hidden;
+    background: linear-gradient(-45deg, red, black, black)
+}
+
+
+#video-background {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.nav-link {
+    color: whitesmoke;
+    font-size: 28px;
+    transition: transform 0.5s;
+}
+
+.nav-item .active {
+    color: red !important;
+}
+
+.nav-link:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+
+.header-panel-text,
+.header-panel-logo {
+    color: whitesmoke;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+    width: 30%;
+    height: 180px;
+    background-color: rgb(156, 2, 2);
+    border-radius: 6%;
+    transition: all 2s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.item-1:hover {
+    background-image: url("/web1/images/Rosters/BGMI.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item-2:hover {
+    background-image: url("/web1/images/Rosters/FIFA.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item-3:hover {
+    background-image: url("/web1/images/Rosters/CODM.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item-4:hover {
+    background-image: url("/web1/images/Rosters/NEWSTATE.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item-5:hover {
+    background-image: url("/web1/images/Rosters/BGMI_G.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.panel-3,
+.panel-4,
+.panel-5,
+.panel-6,
+.panel-7 {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    perspective: 1000px;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+
+}
+
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+    background-color: rgb(50, 49, 49);
+    width: 292px;
+    padding: 10px;
+}
+
+.swiper-slide .subtitle {
+    font-size: 21px;
+    padding: 10px;
+    color: red;
+    background-color: rgb(50, 49, 49);
+    width: 292px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.subtitle .footer-icons span {
+    margin: 0px;
+    background-color: transparent;
+    color: whitesmoke;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
+    transition: all 0.8s;
+}
+
+.subtitle .footer-icons span:hover {
+    color: red;
+    background-color: transparent;
+    animation: none;
+}
+
+.swiper-slide .text {
+    max-width: 292px;
+    max-height: 397px;
+}
+
+.swiper-slide .text img {
+    max-width: 292px;
+    max-height: 397px;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(168, 25, 25);
+    color: whitesmoke;
+    font-weight: 600;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "Roster";
+    height: 90%;
+    width: 48%;
+    left: 2%;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset, 0 -1.31em 1.31em -1.31em rgba(0, 0, 0, 0.3) inset, 0 0 1px 0 rgba(0, 0, 0, 0.1);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+    transition: .4s;
+}
+
+.switch input:checked+.slider:before {
+    content: "Staff";
+    transform: translateX(100%);
+}
+
+.switch input {
+    display: none;
+}

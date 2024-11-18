@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godlike</title>
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google-Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Bootstrap-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- External CSS -->
+    <link href="/web1/CSS/contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="/web1/CSS/comman.css">
+    <!-- Responsive CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @media (max-width: 576px) {
+
+            .header-panel-text {
+                display: flex;
+                max-height: 500px;
+                justify-content: start !important;
+                margin: 0;
+            }
+
+            .header-panel-text-logo {
+                /* display: flex; */
+                /* justify-content: center; */
+                text-align: justify;
+                flex-direction: column-reverse;
+
+            }
+
+            .col-1 {
+                padding: 0 !important;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <button class="btn  rounded-4 " id="mybtn" onclick="goToTop(this)" style="background-color: red;"><span
+            class="material-symbols-outlined" style="font-size: 30px !important; color: aliceblue;">
+            expand_less
+        </span></button>
+    <div class="load-container">
+            <img src="/web1/images/godlike.png" alt="" width="100" class="logo" id="load">
+        </div>
+
+    <header class="header-panel container-fluid">
+        <video id="video-background" autoplay muted loop>
+            <source src="/web1/b_video.mp4" type="video/mp4">
+        </video>
+        <div class="container-fluid custom-navbar">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <span class="navbar-toggler-icon btn btn-lg  btn-light">
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse container-fluid" id="link">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item px-4"><a href="/web1/index.html" class="nav-link">HOME</a></li>
+                            <li class="nav-item px-4"><a href="/web1/about.html" class="nav-link">ABOUT US</a></li>
+                            <li class="nav-item px-4"><a href="/web1/roster.html" class="nav-link">ROSTERS</a></li>
+                            <li class="nav-item px-4"><a href="/web1/creators.html" class="nav-link">CREATORS</a></li>
+                            <li class="nav-item px-4"><a href="/web1/contact.html" class="nav-link active">CONTACT
+                                    US</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="offcanvas offcanvas-start bg-dark" id="demo" data-bs-scroll="true">
+            <div class="offcanvas-header">
+                <button class="btn btn-danger" data-bs-dismiss="offcanvas">&times;</button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="navbar">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item px-4"><a href="/web1/index.html" class="nav-link">HOME</a></li>
+                        <li class="nav-item px-4"><a href="/web1/about.html" class="nav-link">ABOUT US</a></li>
+                        <li class="nav-item px-4"><a href="/web1/roster.html" class="nav-link">ROSTERS</a></li>
+                        <li class="nav-item px-4"><a href="/web1/creators.html" class="nav-link">CREATORS</a></li>
+                        <li class="nav-item px-4"><a href="/web1/contact.html" class="nav-link active">CONTACT US</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <div class="header-panel-text-logo row container-fluid mx-auto ">
+            <div class="container-fluid header-panel-text col-sm-8 d-flex flex-column justify-content-center ">
+                <h1 class="display-1 ">CONTACT US</h1>
+            </div>
+            <div class="header-panel-logo d-flex justify-content-center align-items-center container col-sm-4">
+                <img src="/web1/images/godlike.png" alt="logo" class="" width="100%">
+            </div>
+        </div>
+    </header>
+
+    <section class="panel-2 container d-flex flex-wrap mt-5">
+        <div class="col-1 container p-5">
+            <h1 class="">Get In Touch</h1>
+            <div class="d-flex mt-4">
+                <span class="material-symbols-outlined mx-4">location_on</span>
+                <p>Plot-82,Ghanshyam Villa,<br> Sector 20, Kharghar,<br> Mumbai,
+                    Maharashtra <br> 410210</p>
+            </div>
+            <div class="d-flex">
+                <span class="material-symbols-outlined mx-4 ">mail </span>
+                <p>contact@godlikeesports.com</p>
+            </div>
+            <h6 class="mt-4">Find Us</h6>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30169.93831622278!2d73.071739!3d19.053082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c383563e379d%3A0x5c0a8e91a2a53310!2sGODLIKE%20ESPORTS%20BOOTCAMP!5e0!3m2!1sen!2sus!4v1709644864976!5m2!1sen!2sus"
+                width="500" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="map"></iframe>
+            <h6 class="mt-4">Follow Us</h6>
+            <div class="footer-icons">
+                <span class="fa fa-youtube-play"></span>
+                <span class="fa fa-instagram"></span>
+                <span class="fa fa-twitter"></span>
+                <span class="fa fa-linkedin-square"></span>
+            </div>
+        </div>
+        <div class="col-2 p-5">
+            <h1>Send us a message</h1>
+            <form action="">
+                <div class="mb-3 mt-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="num" class="form-label">Phone:</label>
+                    <input type="text" class="form-control" id="num" placeholder="Enter phone" name="phone" required>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="sub" class="form-label">Subject:</label>
+                    <input type="text" class="form-control" id="sub" placeholder="Enter subject" name="sub" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                </div>
+                <label for="comment">Comments:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+                <button type="submit" class="btn mt-4 submit-btn">Send</button>
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container footer rounded-5 mb-5">
+            <div class="footer-logo">
+                <img src="/web1/images/godlike.png" alt="footer-logo">
+            </div>
+
+            <div class="footer-icons ">
+                <span class="fa fa-youtube-play"></span>
+                <span class="fa fa-instagram"></span>
+                <span class="fa fa-twitter"></span>
+                <span class="fa fa-linkedin-square"></span>
+            </div>
+            <div class="footer-links ">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-md">
+                        <div class="container-fluid r">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#demo">
+                                <span class="navbar-toggler-icon btn btn-lg btn-light ">
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse container-fluid" id="link">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item px-4"><a href="/web1/index.html"
+                                            class="nav-link">HOME</a></li>
+                                    <li class="nav-item px-4"><a href="/web1/about.html" class="nav-link">ABOUT
+                                            US</a>
+                                    </li>
+                                    <li class="nav-item px-4"><a href="/web1/roster.html" class="nav-link">ROSTERS</a>
+                                    </li>
+                                    <li class="nav-item px-4"><a href="/web1/creators.html"
+                                            class="nav-link">CREATORS</a></li>
+                                    <li class="nav-item px-4"><a href="/web1/contact.html"
+                                            class="nav-link active ">CONTACT US</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Privacy Policy</td>
+                        <td>Terms Of Service</td>
+                        <td>Disclaimer</td>
+                    </tr>
+                </thead>
+            </table>
+            <strong>
+                GodLike@2024.All rights reserved. | Copyright@ASB
+            </strong>
+        </div>
+    </footer>
+
+    <!-- External JS -->
+    <script src="/web1/JS/script.js"></script>
+    <script src="/web1/JS/comman.js"></script>
+</body>
+
+</html>
