@@ -1,5 +1,5 @@
 body {
-    background: url(images/banner-3-1.webp);
+    background: url('../images/banner-3-1.webp');
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
@@ -84,31 +84,31 @@ p {
 }
 
 .item-1:hover {
-    background-image: url("images/Rosters/BGMI.jpeg");
+    background-image: url("../images/Rosters/BGMI.jpeg");
     background-position: center;
     background-size: cover;
 }
 
 .item-2:hover {
-    background-image: url("images/Rosters/FIFA.jpeg");
+    background-image: url("../images/Rosters/FIFA.jpeg");
     background-position: center;
     background-size: cover;
 }
 
 .item-3:hover {
-    background-image: url("images/Rosters/CODM.jpeg");
+    background-image: url("../images/Rosters/CODM.jpeg");
     background-position: center;
     background-size: cover;
 }
 
 .item-4:hover {
-    background-image: url("images/Rosters/NEWSTATE.jpeg");
+    background-image: url("../images/Rosters/NEWSTATE.jpeg");
     background-position: center;
     background-size: cover;
 }
 
 .item-5:hover {
-    background-image: url("images/Rosters/BGMI_G.jpeg");
+    background-image: url("../images/Rosters/BGMI_G.jpeg");
     background-position: center;
     background-size: cover;
 }
